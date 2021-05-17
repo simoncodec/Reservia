@@ -5,7 +5,7 @@
 @font-face 
 {
     font-family:"Raleway-VariableFont_wght";
-    src: url(assets/police/Raleway-VariableFont_wght.ttf);
+    src: url("assets/police/Raleway-VariableFont_wght.ttf") format("ttf");
 }
 
 .bloc_de_page
