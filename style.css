@@ -4,13 +4,13 @@
 
 @font-face 
 {
-    font-family:"Raleway-VariableFont_wght";
+    font-family:"Raleway-VariableFont_wght", sans-serif;
     src: url("assets/police/Raleway-VariableFont_wght.ttf") format("ttf");
 }
 
 .bloc_de_page
 {
-    font-family: 'Raleway-VariableFont_wght';
+    font-family: 'Raleway-VariableFont_wght', sans-serif;
     width: 90%;     
     margin: auto;
 }
@@ -38,7 +38,7 @@ span.euro
 
 nav
 {
-    font-family:"Raleway-VariableFont_wght";
+    font-family:"Raleway-VariableFont_wght", sans-serif;
     src: url(../P2_Diril_simon/assets/police/Raleway-VariableFont_wght.ttf);
 }
 
@@ -61,6 +61,7 @@ nav
   {
       padding: 20px;
       margin-left: -10px;
+      font-size: larger;
   }
 
 .hautduheader nav a
@@ -85,15 +86,22 @@ nav
       font-weight: 550;
   }
 
+
   .header p
   {
-      font-size: smaller;
-      font-family:"Raleway-VariableFont_wght";
+    margin-top: 20px;
+    font-family: 'Raleway';
+    font-size: 23px;
   }
 
-  .header h4
+  .tittle
   {
-      margin-top: 20px;
+      font-size: x-large;
+  }
+
+  .image_du_site
+  {
+      width: 150px;
   }
 
 /* ********************************************
@@ -219,8 +227,8 @@ display: none;
 {
 position: absolute;
 content: "";
-height: 40px;
-width: 40px;
+height: 50px;
+width: 50px;
 left: -3px;
 top: -3px;
 background-color: #f2f2f2;
@@ -254,10 +262,9 @@ transition: all .2s;
 border: 2px solid #F2F2F2;
 border-radius: 34px;
 Padding-left: 18px;
-padding-top: 8px;
-padding-bottom: 8px;
+padding-top: 14px;
+padding-bottom: 14px;
 text-align: center;
-font-weight: bolder;
 font-size:0.9em;
 }
 
@@ -280,9 +287,9 @@ display: none;
 {
 position: absolute;
 content: "";
-height: 40px;
-width: 40px;
-left: -3px;
+height: 50px;
+width: 50px;
+left: -9px;
 top: -3px;
 background-color: #f2f2f2;
 transition: 0.4s;
@@ -314,10 +321,9 @@ cursor: pointer;
 transition: all .2s;
 border: 2px solid #F2F2F2;
 border-radius: 34px;
-padding-top: 8px;
-padding-bottom: 8px;
+padding-top: 14px;
+padding-bottom: 14px;
 text-align: center;
-font-weight: bolder;
 font-size:0.9em;
 }
 
@@ -339,8 +345,8 @@ display: none;
 {
 position: absolute;
 content: "";
-height: 40px;
-width: 40px;
+height: 50px;
+width: 50px;
 left: -3px;
 top: -3px;
 background-color: #f2f2f2;
@@ -374,10 +380,9 @@ transition: all .2s;
 border: 2px solid #F2F2F2;
 border-radius: 34px;
 Padding-left: 12px;
-padding-top: 8px;
-padding-bottom: 8px;
+padding-top: 14px;
+padding-bottom: 14px;
 text-align: center;
-font-weight: bolder;
 font-size:0.9em;
 }
 
@@ -400,9 +405,9 @@ display: none;
 {
 position: absolute;
 content: "";
-height: 40px;
-width: 40px;
-left: -3px;
+height: 50px;
+width: 50px;
+left: -16px;
 top: -3px;
 background-color: #f2f2f2;
 transition: 0.4s;
@@ -421,24 +426,23 @@ color: white;
 
 input:checked + .slider_animaux:before
 {
-transform: translateX(168px);
+transform: translateX(175px);
 }
 
 .slider_animaux
 {
 position: relative;
 display:block;
-margin-left: 35px;
-width:170px;
+margin-left: 40px;
+width: 200px;
 cursor: pointer;
 transition: all .2s;
 border: 2px solid #F2F2F2;
 border-radius: 34px;
-padding-left: 17px;
-padding-top: 8px;
-padding-bottom: 8px;
+padding-top: 14px;
+padding-top: 14px;
+padding-bottom: 14px;
 text-align: center;
-font-weight: bolder;
 font-size:0.9em;
 }
 
@@ -461,7 +465,7 @@ display: flex;
 align-items:center;
 margin-top: 10px;
 margin-bottom: 10px;
-font-family:"Raleway-VariableFont_wght";
+font-family:"Raleway-VariableFont_wght", sans-serif;
 }
 
 .info p
@@ -472,17 +476,17 @@ margin-left: 5px;
 /* **********************************
 - Mise en place de La Section Bloc_2 -
 ************************************ */
-
-.Bloc_2
-{
-display: flex;
-justify-content: space-between;
-width: 100%;
+.Bloc_2{
+    display: flex;
+    justify-content: space-between;
 }
+
+
 
 /* *****************************************
 - Mise en place de La partie hebergement -
 ****************************************** */
+
 
 .hebergement h4
 {
@@ -493,25 +497,21 @@ margin:0;
 
 .hebergement
 {
-width: 65%;
 background-color: #F2F2F2;
 border-radius: 15px 15px 15px 15px;
-display: flex;
 flex-direction: column;
-padding: 30px;
+width: 60%;
+padding: 1%;
 }
 
 .liste_hotel
 {
 display: flex;
-flex-wrap: wrap;
-width: 100%;
-justify-content: space-between;
+flex-flow: row wrap;
 }
 
 .bloc_blanc_gauche
 {
-width: 230px;
 height: 190px;
 border-radius: 15px 15px 15px 15px;
 margin-bottom: 30px;
@@ -525,38 +525,43 @@ border: solid 4px white;
 .bloc_auberge_cannebiere
 {
 background: url('assets/images/hebergements/3_medium/la\ cannebiere.jpg') no-repeat;
-background-size:contain;
+background-size:cover;
+background-position-y: 70%;
 }
 
 .bloc_hotel_du_port
 {
 background: url('assets/images/hebergements/3_medium/hotel\ du\ port.jpg') no-repeat;
-background-size:contain;
+background-size:cover;
+background-position-y: 70%;
 }
 
 .bloc_hotel_mouettes
 { 
 background: url('assets/images/hebergements/3_medium/les\ mouettes.jpg') no-repeat;
-background-size:contain;
+background-size:cover;
+background-position-y: 70%;
 }
 
 .bloc_hotel_de_la_mer
 { 
 background: url('assets/images/hebergements/3_medium/Hotel\ de\ la\ mer.jpg') no-repeat;
 background-size: cover;
-background-position-y: 165%;
+background-position-y: 70%;
 }
 
 .bloc_auberge
 { 
 background: url('assets/images/hebergements/3_medium/Auberge-2.jpg') no-repeat;
-background-size:contain;
+background-size:cover;
+background-position-y: 70%;
 }
 
 .bloc_hotel_amina
 {
 background: url('assets/images/hebergements/3_medium/amina.jpg') no-repeat;
-background-size: cover;background-position-y: 70%;
+background-size: cover;
+background-position-y: 70%;
 }
 
 .description_bloc_gauche
@@ -620,10 +625,9 @@ font-weight:bold;
 {
 background-color:#F2F2F2;
 border-radius: 15px;
-display: flex;
 flex-direction: column;
 align-items: center;
-padding:30px;
+padding: 1%;
 }
 
 .titres_bloc_populaires
@@ -649,10 +653,15 @@ margin-top: -5px;
 font-size: smaller;
 }
 
+.clic
+{
+    width: 33%;
+}
+
 .clic_droit
 {
 display: flex;
-width: 300px;
+width: auto;
 border: solid 4px white;
 box-shadow: -2px 1px 6px 4px #e0dede;
 border-radius: 15px;
@@ -694,19 +703,21 @@ font-size: 0.9em;
 {
 background:url('assets/images/hebergements/3_medium/Le\ soleil.jpg') no-repeat;
 background-size:cover;
+background-position-y: 70%;
 }
 
 .chambre
 {
 background: url('assets/images/hebergements/3_medium/Au\ coeur\ de\ l\'eau.jpg') no-repeat;
 background-size: cover; 
+background-position-y: 70%;
 }
 
 .bleu
 {
 background: url('assets/images/hebergements/3_medium/tout\ bleu\ et\ blanc.jpg') no-repeat;
 background-size: cover;
-background-position-y: 90%;
+background-position-y: 70%;
 }
 
 
@@ -724,7 +735,7 @@ font-family: sans-serif;
 
 .activite_Marseille
 {
-font-size: 0.8em;
+
 font-weight: bold;
 display: flex;
 justify-content: space-between;
@@ -841,7 +852,7 @@ flex-direction: column-reverse;
 background-color: #f2f2f2;
 display: flex;
 width: 100%;
-font-family:"Raleway-VariableFont_wght";
+font-family:"Raleway-VariableFont_wght", sans-serif;
 margin-top: 30px;
 }
 
@@ -876,10 +887,10 @@ width: 33%;
 
 
 /*  -------  **************************** -----------------------
---------------- Responsive min 320 -- 530 -----------------------
+--------------- Responsive min 320 -- 610 -----------------------
 ------------ ****************************** --------------------- */
 
-@media screen and (min-width: 320px) and (max-width: 600px)
+@media screen and (min-width: 320px) and (max-width: 889px)
 {
     body
     {
@@ -989,23 +1000,22 @@ width: 33%;
     .Bloc_2
     {
         width: 100%;
-        display:flex;
         flex-direction: column-reverse;
-        align-items: center;
     }
 
     .populaires
     {
         background-color: #f2f2f2;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .hebergement
     {
         padding:0;
         background:none;
+        width: auto;
     }
 
     .hebergement_populaire
@@ -1019,16 +1029,18 @@ width: 33%;
     {
         padding:20px;
     }
-    .liste_hotel
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+
 
     .afficher_plus
     {
         padding:20px 20px 0px 20px;
+    }
+
+    .liste_hotel
+    {
+        flex-direction: column;
+    align-items: center;
+    display: contents;
     }
 
     /* ************
@@ -1048,7 +1060,6 @@ width: 33%;
     .filtre
     {
         display: flex;
-        flex-direction: column;
     }
 
     .switch3
@@ -1169,91 +1180,34 @@ width: 33%;
 }
 
 
-
-
-/*  -------  **************************** ------------------------
------------- Responsive min ipad 520 -- 900 ----------------------
------------- ****************************** --------------------- */
-
-
-@media screen and (min-width: 520px) and (max-width: 900px)
+@media screen and (min-width: 984px)
 {
-    .hautduheader
-    {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-    }
-
-    .hautduheader nav a
-    {
-        margin-left: 10px;
-    }
-
-    .Bloc_1
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Bloc_2
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
     .hebergement
     {
-        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 15px 15px 15px 15px;
+        flex-direction: column;
+        width: 63%;
+        padding: 1%;
     }
 
     .populaires
     {
-        justify-content: flex-start;
-        background-color: white;
-    }
-
-    .container2
-    {
+        background-color: #F2F2F2;
+        border-radius: 15px;
         flex-direction: column;
-        display: flex;
+        align-items: center;
+        width: 30%;
+        padding: 1%;
     }
+}
 
+
+@media screen and (min-width: 320px) and (max-width: 724px)
+{
     .filtre
     {
-        display: contents;
-    }
-
-    .lefooter
-    {
-        background-color: #f2f2f2;
         display: flex;
-        width: 100%;
-        font-family:"Raleway-VariableFont_wght";
-        margin-top: 30px;
-        display: inline-block;
+        flex-direction: column;
     }
-}
-
-/*  -------  **************************** ------------------------
-------------------- Responsive 900 -- 1400 ------------------------
------------- ****************************** --------------------- */
-
-
-@media screen and (min-width: 900px) and (max-width: 1400px)
-{
-
-.Bloc_2
-    {   width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-.populaires
-{
-    justify-content: flex-start;
-    background-color: white;
-}
-
 }
