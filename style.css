@@ -1107,6 +1107,7 @@ width: 33%;
     .eco_famille
     {
         display: flex;
+        margin-bottom: 5px;
     }
 
 
@@ -1222,7 +1223,7 @@ width: 33%;
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px)
+@media screen and (min-width: 768px) and (max-width: 1023px)
 {
     .hebergement
     {
@@ -1253,9 +1254,10 @@ width: 33%;
         display: block;
     }
 
-    .lefooter
+    .footer
     {
-        display: block;
+        padding: 10px 5px 10px 50px;
     }
+
 }
 
