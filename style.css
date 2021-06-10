@@ -57,12 +57,6 @@ nav
     align-items: flex-end;
 }
 
-.hautduheader nav 
-  {
-      padding: 20px;
-      margin-left: -10px;
-      font-size: larger;
-  }
 
 .hautduheader nav a
 {
@@ -109,6 +103,8 @@ nav
   .image_du_site
   {
       width: 150px;
+      margin-left: 15px;
+      margin-top: 10px;
   }
 
 /* ********************************************
@@ -653,6 +649,7 @@ padding-bottom: 5%;
 .titres_bloc_populaires a
 {
     font-family: sans-serif;
+    margin-left: 15px;
 }
 
 .star_bloc_droit
@@ -902,21 +899,27 @@ width: 33%;
 
 @media screen and (min-width: 320px) and (max-width: 770px)
 {
+
+    .bloc_de_page
+    {
+        width: 100%;
+    }
+
     body
     {
         padding: 0;
         margin: 0;
     }
 
-    .bloc_de_page
-    {
-        width: 95%;
-        padding: 10px;
-    }
 
     /* ************
     --- Header ---
     ************* */
+
+    .header, .Bloc_1, .info
+    {
+        padding: 0px 10px 0px 15px;
+    }
 
     img
     {
@@ -931,7 +934,7 @@ width: 33%;
     }
 
     nav{
-        width: 90%;
+        width: 100%;
         display: flex;
     }
 
@@ -944,17 +947,10 @@ width: 33%;
         border-bottom: solid #F2F2F2;
     }
 
-    .hautduheader #navA
-    {
-        padding-left: 16%;
-        padding-right: 16%;
-    }
 
     .hautduheader #navH
     {
         border-bottom: 2px solid #0065FC;
-        padding-right: 10%;
-        padding-left: 10%;
         width: 50%;
         padding-top: 25px;
         text-align: center;
@@ -972,7 +968,7 @@ width: 33%;
     {
         position: absolute;
         top: 30px;
-        right: 39px;
+        right: 5px;
     }
 
     .hautduheader nav a 
@@ -982,11 +978,6 @@ width: 33%;
         padding: 20px;
     }
 
-    .hautduheader nav 
-  {
-      padding: 20px;
-      margin-left: -10px;
-  }
 
     .hautduheader nav a #navS
     {
@@ -1024,7 +1015,7 @@ width: 33%;
 
     .hebergement
     {
-        padding:0;
+        padding: 15px;
         background:none;
         width: auto;
     }
@@ -1042,11 +1033,6 @@ width: 33%;
     }
 
 
-    .afficher_plus
-    {
-        padding:20px 20px 0px 20px;
-    }
-
     .liste_hotel
     {
         flex-direction: column;
@@ -1060,7 +1046,8 @@ width: 33%;
 
     .Bloc_3 h4
     {
-        margin-left: 45px;
+        font-size: 18px;
+        margin-left: 15px;
     }
 
     .header
@@ -1099,11 +1086,6 @@ width: 33%;
         margin-left: 10px;
     }
 
-    .info
-    {
-        margin-left: 15px;
-    }
-
     .eco_famille
     {
         display: flex;
@@ -1114,6 +1096,7 @@ width: 33%;
     .activite_Marseille
     {
     flex-direction:column;
+    padding: 15px;
     }
 
     .clicVieuxPort
@@ -1176,15 +1159,16 @@ width: 33%;
     --- Footer ---
     ************* */
 
+    .footer
+    {
+        padding: 15px 15px 15px 15px;
+        width: auto;
+    }
+
     footer
     {
         display: flex;
         flex-direction: column;
-    }
-
-    .lefooter
-    {
-        padding-left: 10px;
     }
 }
 
@@ -1247,6 +1231,11 @@ width: 33%;
         text-decoration: none;
         margin-left: 50px;
         padding: 5px;
+    }
+
+    .slider_famille
+    {
+        margin-top: 7px;
     }
 
     .eco_famille
